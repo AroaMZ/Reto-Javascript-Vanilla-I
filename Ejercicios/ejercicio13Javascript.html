@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13-Javascript (I)</title>
+    <link rel="stylesheet" type="text/css" href="../ejerciciosJavascript.css">
+</head>
+
+<body>
+    <h1>Ejercicio 13</h1>
+    <p>Crea una aplicación llamada CalculadoraInversa, nos pedirá 2 operandos (int) y
+        un signo aritmético (String), según este último se realizará la operación
+        correspondiente. Al final mostrara el resultado en un cuadro de dialogo.
+        Los signos aritméticos disponibles son:
+        +: suma los dos operandos.
+        -: resta los operandos.
+        *: multiplica los operandos.
+        /: divide los operandos, este debe dar un resultado con decimales (double)
+        ^: 1o operando como base y 2o como exponente.
+        %: módulo, resto de la división entre operando1 y operando2:</p>
+
+    <script>
+        var operacion = prompt("Introduce suma, resta, multiplicacion, division, exponencial o modulo");
+        var num1 = prompt("Introduce un número");
+        var num2 = prompt("Introduce el segundo numero");
+
+        function suma(num1, num2) {
+            return parseFloat(num1) + parseFloat(num2);
+        }
+        function resta(num1, num2) {
+            return parseFloat(num1) - parseFloat(num2);
+        }
+        function multiplicacion(num1, num2) {
+            return parseFloat(num1) * parseFloat(num2);
+        }
+        function division(num1, num2) {
+            return parseFloat(num1) / parseFloat(num2);
+        }
+        function exponencial(num1, num2) {
+            return parseFloat(num1) ^ parseFloat(num2);
+        }
+        function modulo(num1, num2) {
+            return parseFloat(num1) % parseFloat(num2);
+        }
+
+        switch (operacion) {
+            case "suma":
+                document.write(suma(num1, num2));
+                break;
+            case "resta":
+                document.write(resta(num1, num2));
+                break;
+            case "multiplicacion":
+                document.write(multiplicacion(num1, num2));
+                break;
+            case "division":
+                document.write(division(num1, num2));
+                break;
+            case "exponencial":
+                document.write(exponencial(num1, num2));
+                break;
+            case "modulo":
+                document.write(modulo(num1, num2));
+                break;
+        }
+    </script>
+
+    <footer>
+        <p>Retos-Javascript Vanilla (I)</p>
+        <p>Aroa Mendez</p>
+    </footer>
+
+
+</body>
+
+</html>

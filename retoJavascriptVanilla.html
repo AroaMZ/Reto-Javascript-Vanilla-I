@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ejerciciosJavascript.css">
+</head>
+
+<body>
+
+    <h1>Retos-Javascript Vanilla (I)</h1>
+
+    <ul>
+        <li><a href="Ejercicios/ejercicio1Javascript.html">Ejercicio 1</a></li>
+        <li><a href="Ejercicios/ejercicio2Javascript.html">Ejercicio 2</a></li>
+        <li><a href="Ejercicios/ejercicio3Javascript.html">Ejercicio 3</a></li>
+        <li><a href="Ejercicios/ejercicio4Javascript.html">Ejercicio 4</a></li>
+        <li><a href="Ejercicios/ejercicio5Javascript.html">Ejercicio 5</a></li>
+        <li><a href="Ejercicios/ejercicio6Javascript.html">Ejercicio 6</a></li>
+        <li><a href="Ejercicios/ejercicio7Javascript.html">Ejercicio 7</a></li>
+        <li><a href="Ejercicios/ejercicio8Javascript.html">Ejercicio 8</a></li>
+        <li><a href="Ejercicios/ejercicio9Javascript.html">Ejercicio 9</a></li>
+        <li><a href="Ejercicios/ejercicio10Javascript.html">Ejercicio 10</a></li>
+        <li><a href="Ejercicios/ejercicio11Javascript.html">Ejercicio 11</a></li>
+        <li><a href="Ejercicios/ejercicio12Javascript.html">Ejercicio 12</a></li>
+        <li><a href="Ejercicios/ejercicio13Javascript.html">Ejercicio 13</a></li>
+    </ul>
+  
+    <script>
+
+
+        /*
+        var num1 = -3;
+        var num2 = -5;
+
+        if (num1 > num2){
+            document.write ("El número mayor es el " + num1);
+        }
+        
+            else if(num2 > num1) {
+                document.write ("El número mayor es el " + num2);
+              
+            } 
+        else
+                document.write ("Los dos valores son iguales");
+         */
+
+
+        /*
+            var nombre = "Aroa";
+           console.log ("Bienvenida " + nombre);
+        */
+
+        /*
+                    var nombre = prompt("Introduce tu nombre");
+                    alert ("Bienvenid@ " + nombre);
+        */
+
+        /*
+                    var r = prompt("Introduce el radio");
+                    var pi = 3.14159265359;
+                    document.write ((parseFloat(r)* parseFloat(r)) * pi);
+        */
+
+        /*            var num = prompt("Introduce número");
+                    var resto = num % 2;
+                    if (resto == 0){
+                        document.write("El número es divisible entre 2");
+                    }
+                    else {
+                        document.write("El número no es divisible entre 2");
+                    }
+        */
+
+        /*
+        var precio = prompt("Introduce el precio del producto");
+        var iva = 21;
+
+        function precioFinal(precio_original, iva_producto) {
+            return ((iva_producto * precio_original / 100) + parseFloat(precio_original));
+        }
+
+        var resultado = precioFinal(precio, iva)
+
+        document.write(resultado);
+        */
+
+        /*
+        var num = 0
+        while (num<=100){
+            document.write(num + "<br>");
+            num++;
+        }
+        */
+
+        /*
+        for(var num=1; num<=100; num++)
+        {
+            document.write(num + "<br>");
+        
+        }
+        */
+
+        /*
+                for(var num1=1; num1<=100; num1++){
+                    if(num1 % 2 == 0 || num1 % 3 == 0){
+                        document.write(num1 + "<br>");
+                    }
+                
+                }
+        */
+
+        /*
+        var ventas = prompt("Introduce número de ventas");
+        var total = 0;
+        
+        for (compras = 0; compras < parseFloat(ventas); compras++){
+            var precio = prompt("Introduce el precio de la compra");
+            total = total + parseFloat(precio);
+        }
+        document.write(total);
+        */
+
+        /*
+        var dia = prompt("Introduce el día de la semana");
+        switch(dia){
+            case "Lunes":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Martes":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Miercoles":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Jueves":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Viernes":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Sabado":
+                document.write("El " + dia + " es laboral");
+            break;
+            case "Domingo":
+                document.write("El " + dia + " no es laboral");
+            break;
+        }
+        */
+/*
+        var contrasena = "holaMundo";
+        var intento = 1;
+        var prueba = prompt("Introduce la contraseña");
+        if (prueba != contrasena) {
+            while (intento < 3) {
+                var prueba = prompt("Introduce la contraseña");
+                intento++
+            } 
+            document.write("Ya no te quedan más intentos");
+        } else {
+            document.write("La contraseña es correcta");
+        } 
+
+
+var operacion = prompt("Introduce suma, resta, multiplicacion, division, exponencial o modulo");
+var num1 = prompt("Introduce un número");
+var num2 = prompt("Introduce el segundo numero");
+
+function suma(num1, num2){
+    return parseFloat(num1) + parseFloat(num2);
+}
+function resta(num1, num2){
+    return parseFloat(num1) - parseFloat(num2);
+}
+function multiplicacion(num1, num2){
+    return parseFloat(num1) * parseFloat(num2);
+}
+function division(num1, num2){
+    return parseFloat(num1) / parseFloat(num2);
+}
+function exponencial(num1, num2){
+    return parseFloat(num1) ^ parseFloat(num2);
+}
+function modulo(num1, num2){
+    return parseFloat(num1) % parseFloat(num2);
+}
+
+switch(operacion){
+    case "suma":
+        document.write(suma(num1, num2));
+        break;
+    case "resta":
+        document.write(resta(num1, num2));
+        break;
+    case "multiplicacion":
+        document.write(multiplicacion(num1, num2));
+        break;
+    case "division":
+        document.write(division(num1, num2));
+        break;
+    case "exponencial":
+        document.write(exponencial(num1, num2));
+        break;
+    case "modulo":
+        document.write(modulo(num1, num2));
+        break;
+}
+*/
+
+    </script>
+    <footer>
+        
+        <p>Retos-Javascript Vanilla (I)</p>
+        <p>Aroa Mendez</p>
+        </div>
+    
+</body>
+
+</html>

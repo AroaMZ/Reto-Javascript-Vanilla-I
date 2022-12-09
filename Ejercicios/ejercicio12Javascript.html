@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12-Javascript (I)</title>
+    <link rel="stylesheet" type="text/css" href="../ejerciciosJavascript.css">
+</head>
+
+<body>
+    <h1>Ejercicio 12</h1>
+    <p>Escribe una aplicación con un String que contenga una contraseña cualquiera.
+        Después se te pedirá que introduzcas la contraseña, con 3 intentos. Cuando
+        aciertes ya no pedirá más la contraseña y mostrará un mensaje diciendo
+        “Enhorabuena”. Piensa bien en la condición de salida (3 intentos y si acierta sale,
+        aunque le queden intentos):</p>
+
+    <script>
+        var contrasena = "holaMundo";
+        var intento = 1;
+        var prueba = prompt("Introduce la contraseña");
+        if (prueba != contrasena) {
+            while (intento < 3) {
+                var prueba = prompt("Introduce la contraseña");
+                intento++
+            }
+            document.write("Ya no te quedan más intentos");
+        } else {
+            document.write("La contraseña es correcta");
+        } 
+    </script>
+
+    <footer>
+        <p>Retos-Javascript Vanilla (I)</p>
+        <p>Aroa Mendez</p>
+    </footer>
+
+
+</body>
+
+</html>

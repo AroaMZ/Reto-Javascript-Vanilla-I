@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6-Javascript (I)</title>
+    <link rel="stylesheet" type="text/css" href="../ejerciciosJavascript.css">
+</head>
+
+<body>
+    <h1>Ejercicio 6</h1>
+    <p>Lee un número por teclado que pida el precio de un producto (puede tener
+        decimales) y calcule el precio final con IVA. El IVA sera una constante que sera
+        del 21%:</p>
+
+    <script>
+        var precio = prompt("Introduce el precio del producto");
+        var iva = 21;
+
+        function precioFinal(precio_original, iva_producto) {
+            return ((iva_producto * precio_original / 100) + parseFloat(precio_original));
+        }
+
+        var resultado = precioFinal(precio, iva)
+
+        document.write(resultado);
+    </script>
+
+    <footer>
+        <p>Retos-Javascript Vanilla (I)</p>
+        <p>Aroa Mendez</p>
+    </footer>
+
+
+</body>
+
+</html>
